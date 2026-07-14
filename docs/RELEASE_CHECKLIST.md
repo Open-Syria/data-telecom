@@ -13,5 +13,8 @@ Before publishing a release:
 
 5. Confirm `release-manifest.json` has the expected version, source list, record
    counts, checksums, and readiness notes.
-6. Publish through the repository release workflow or `release:publish:github`
+6. Confirm `readiness.level` is `api_ready` and
+   `readiness.publicApi.status` is `approved` before pinning the release in
+   `datasets-api`.
+7. Publish through the repository release workflow or `release:publish:github`
    with a valid `GITHUB_TOKEN`.

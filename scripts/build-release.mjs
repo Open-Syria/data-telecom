@@ -693,12 +693,12 @@ function buildReleaseReadiness() {
       domainReadiness('mobile_prefixes', mobilePrefixes.length),
       domainReadiness('number_ranges', numberRanges.length),
     ],
-    level: hardRequirementsPassed ? 'public_directory_ready' : 'raw_seed',
+    level: hardRequirementsPassed ? 'api_ready' : 'raw_seed',
     publicApi: {
       minimumLevel: 'api_ready',
       reason:
-        'Release artifacts are ready, but datasets-api does not expose telecom endpoints yet.',
-      status: 'not_approved',
+        'Release artifacts are approved for the datasets-api telecom endpoints and public dataset discovery.',
+      status: hardRequirementsPassed ? 'approved' : 'not_approved',
     },
   };
 }
@@ -736,6 +736,7 @@ const manifest = {
     slug: 'telecom',
     title: {
       en: 'Telecom Numbering',
+      ar: '\u0628\u064a\u0627\u0646\u0627\u062a \u062a\u0631\u0642\u064a\u0645 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a',
     },
   },
   generatedAt: new Date().toISOString(),

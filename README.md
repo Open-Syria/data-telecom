@@ -28,6 +28,9 @@ repository stores reviewed factual numbering metadata with source attribution an
 keeps source-use limitations visible in `data/sources.json` and
 `docs/SOURCE_DECISIONS.md`.
 
+The `v0.1.0` release manifest is intended to be `api_ready` and approved for the
+public `datasets-api` telecom endpoints.
+
 ## Repository Layout
 
 ```text

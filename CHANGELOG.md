@@ -7,3 +7,5 @@
   mobile prefixes, operators, and public numbering ranges.
 - Add schemas, examples, fixtures, source import manifests, release tooling,
   coverage reporting, and validation scripts.
+- Mark the initial release manifest API-ready for the public `datasets-api`
+  telecom endpoints.
