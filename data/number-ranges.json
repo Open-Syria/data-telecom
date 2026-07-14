@@ -1,0 +1,135 @@
+[
+  {
+    "id": "sy-mobile-prefix-090-reserved",
+    "name": {
+      "en": "Reserved mobile prefix 090"
+    },
+    "rangeType": "reserved_mobile_prefix",
+    "ranges": ["090"],
+    "assignmentStatus": "reserved",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-090-reserved",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-097-reserved",
+    "name": {
+      "en": "Reserved mobile prefix 097"
+    },
+    "rangeType": "reserved_mobile_prefix",
+    "ranges": ["097"],
+    "assignmentStatus": "reserved",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-097-reserved",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-ranges-047-048-used",
+    "name": {
+      "en": "Used fixed ranges 047 and 048"
+    },
+    "rangeType": "used_range",
+    "ranges": ["047", "048"],
+    "assignmentStatus": "used",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-047-048-used",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-ranges-06-07-unused",
+    "name": {
+      "en": "Unused fixed ranges 06 and 07"
+    },
+    "rangeType": "unused_range",
+    "ranges": ["06", "07"],
+    "assignmentStatus": "unused",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-06-07-not-used",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-short-numbers-1xx",
+    "name": {
+      "en": "Short numbers 1xx"
+    },
+    "rangeType": "short_number",
+    "ranges": ["1xx"],
+    "assignmentStatus": "used",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "short-numbers-1xx",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-private-numbering-all-governorates",
+    "name": {
+      "en": "Private numbering ranges in all governorates"
+    },
+    "rangeType": "private_numbering",
+    "ranges": ["20xx", "30xx", "50xx", "92xx", "93xx", "94xx", "95xx", "97xx", "98xx", "99xx"],
+    "assignmentStatus": "private_numbering",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "private-numbering-all-governorates",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-private-numbering-damascus",
+    "name": {
+      "en": "Private numbering ranges in Damascus"
+    },
+    "rangeType": "private_numbering",
+    "ranges": ["40xx", "60xx", "70xx", "80xx", "90xx", "91xx", "96xx"],
+    "assignmentStatus": "private_numbering",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "private-numbering-damascus",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  }
+]

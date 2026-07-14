@@ -1,0 +1,21 @@
+[
+  {
+    "id": "sy-national-numbering-plan",
+    "countryCode": "963",
+    "countryIso2": "SY",
+    "countryIso3": "SYR",
+    "nationalPrefix": "0",
+    "internationalPrefix": null,
+    "planScope": "fixed_and_mobile",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "communication-2022-08-11",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  }
+]

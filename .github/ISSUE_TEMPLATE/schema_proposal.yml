@@ -1,0 +1,13 @@
+name: Schema proposal
+description: Propose a schema or validation change.
+title: "Schema proposal: "
+labels: ["schema"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the field, validation rule, or shape change.
+    validations:
+      required: true
+

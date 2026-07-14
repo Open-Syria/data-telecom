@@ -1,0 +1,19 @@
+name: Data correction
+description: Report an incorrect telecom numbering record.
+title: "Data correction: "
+labels: ["data-correction"]
+body:
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction
+      description: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources
+      description: Include reusable public sources that support the correction.
+    validations:
+      required: true

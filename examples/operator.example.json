@@ -1,0 +1,19 @@
+{
+  "id": "sy-syrian-telecom",
+  "name": {
+    "en": "Syrian Telecom"
+  },
+  "operatorType": "fixed",
+  "numberingRole": "fixed_operator",
+  "assignmentStatus": "assigned",
+  "sourceIds": ["itu-syria-numbering-plan-2022"],
+  "sourceReferences": [
+    {
+      "sourceId": "itu-syria-numbering-plan-2022",
+      "sourceRecordId": "communication-2022-08-11-fixed-operator",
+      "sourceRecordDate": "2022-08-11",
+      "accessedAt": "2026-07-14T16:45:00.000Z"
+    }
+  ],
+  "sourceStatus": "released"
+}

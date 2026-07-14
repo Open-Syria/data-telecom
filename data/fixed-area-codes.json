@@ -1,0 +1,431 @@
+[
+  {
+    "id": "sy-fixed-area-code-11-damascus-rif-dimashq",
+    "name": {
+      "en": "Damascus and Rif Dimashq"
+    },
+    "areaCode": "11",
+    "dialingPrefix": "011",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-damascus", "sy-rif-dimashq"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-damascus-rural-011",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-damascus sy-rif-dimashq",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-14-quneitra",
+    "name": {
+      "en": "Al Quneitra"
+    },
+    "areaCode": "14",
+    "dialingPrefix": "014",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-quneitra"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-al-quneitra-014",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-quneitra",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-15-daraa",
+    "name": {
+      "en": "Daraa"
+    },
+    "areaCode": "15",
+    "dialingPrefix": "015",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-daraa"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-daraa-015",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-daraa",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-16-as-suwayda",
+    "name": {
+      "en": "Al Sweda"
+    },
+    "areaCode": "16",
+    "dialingPrefix": "016",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-as-suwayda"],
+    "subscriberNumberLength": {
+      "min": 6,
+      "max": 6
+    },
+    "nationalSignificantNumberLength": {
+      "min": 8,
+      "max": 8
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-al-sweda-016",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-as-suwayda",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-21-aleppo",
+    "name": {
+      "en": "Aleppo"
+    },
+    "areaCode": "21",
+    "dialingPrefix": "021",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-aleppo"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-aleppo-021",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-aleppo",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-22-raqqa",
+    "name": {
+      "en": "Al Rakkah"
+    },
+    "areaCode": "22",
+    "dialingPrefix": "022",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-raqqa"],
+    "subscriberNumberLength": {
+      "min": 6,
+      "max": 6
+    },
+    "nationalSignificantNumberLength": {
+      "min": 8,
+      "max": 8
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-al-rakkah-022",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-raqqa",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-23-idlib",
+    "name": {
+      "en": "Edleb"
+    },
+    "areaCode": "23",
+    "dialingPrefix": "023",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-idlib"],
+    "subscriberNumberLength": {
+      "min": 6,
+      "max": 6
+    },
+    "nationalSignificantNumberLength": {
+      "min": 8,
+      "max": 8
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-edleb-023",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-idlib",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-31-homs",
+    "name": {
+      "en": "Homs"
+    },
+    "areaCode": "31",
+    "dialingPrefix": "031",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-homs"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-homs-031",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-homs",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-33-hama",
+    "name": {
+      "en": "Hama"
+    },
+    "areaCode": "33",
+    "dialingPrefix": "033",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-hama"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-hama-033",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-hama",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-41-latakia",
+    "name": {
+      "en": "Latakia"
+    },
+    "areaCode": "41",
+    "dialingPrefix": "041",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-latakia"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-latakia-041",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-latakia",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-43-tartus",
+    "name": {
+      "en": "Tartous"
+    },
+    "areaCode": "43",
+    "dialingPrefix": "043",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-tartus"],
+    "subscriberNumberLength": {
+      "min": 7,
+      "max": 7
+    },
+    "nationalSignificantNumberLength": {
+      "min": 9,
+      "max": 9
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-tartous-043",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-tartus",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-51-deir-ez-zor",
+    "name": {
+      "en": "Deir Elzzour"
+    },
+    "areaCode": "51",
+    "dialingPrefix": "051",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-deir-ez-zor"],
+    "subscriberNumberLength": {
+      "min": 6,
+      "max": 6
+    },
+    "nationalSignificantNumberLength": {
+      "min": 8,
+      "max": 8
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-deir-elzzour-051",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-deir-ez-zor",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-fixed-area-code-52-al-hasakah",
+    "name": {
+      "en": "Al Hasakeh"
+    },
+    "areaCode": "52",
+    "dialingPrefix": "052",
+    "operatorId": "sy-syrian-telecom",
+    "governorateIds": ["sy-al-hasakah"],
+    "subscriberNumberLength": {
+      "min": 6,
+      "max": 6
+    },
+    "nationalSignificantNumberLength": {
+      "min": 8,
+      "max": 8
+    },
+    "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "fixed-al-hasakeh-052",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      },
+      {
+        "sourceId": "opensyria-data-geography",
+        "sourceRecordId": "sy-al-hasakah",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  }
+]

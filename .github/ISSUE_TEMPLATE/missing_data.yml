@@ -1,0 +1,19 @@
+name: Missing data
+description: Suggest missing telecom numbering metadata within the approved scope.
+title: "Missing telecom record: "
+labels: ["missing-data"]
+body:
+  - type: textarea
+    id: record
+    attributes:
+      label: Missing record
+      description: Which public country-code, area-code, prefix, operator, or range record is missing?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources
+      description: Include reusable public sources that support adding it.
+    validations:
+      required: true

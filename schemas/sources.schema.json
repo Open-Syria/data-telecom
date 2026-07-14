@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opensyria.org/schemas/data-telecom/sources.schema.json",
+  "title": "OpenSyria Telecom Source Registry",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "title", "url", "license", "status", "fields"],
+    "properties": {
+      "id": { "type": "string", "minLength": 1 },
+      "title": { "type": "string", "minLength": 1 },
+      "url": { "type": "string", "format": "uri" },
+      "license": { "type": "string", "minLength": 1 },
+      "licenseUrl": { "type": "string", "format": "uri" },
+      "status": {
+        "type": "string",
+        "enum": ["approved", "limited", "proposed", "rejected"]
+      },
+      "fields": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string", "minLength": 1 }
+      },
+      "notes": { "type": "string", "minLength": 1 }
+    }
+  }
+}

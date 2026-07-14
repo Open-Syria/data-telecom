@@ -1,0 +1,40 @@
+{
+  "sourceId": "itu-syria-numbering-plan-2022",
+  "sourceTitle": "Syrian Arab Republic (country code +963), National Numbering Plan",
+  "sourceUrl": "https://www.itu.int/dms_pub/itu-t/oth/02/02/T02020000C90004PDFE.pdf",
+  "license": "ITU website terms; public informational material with reuse limitations",
+  "licenseUrl": "https://www.itu.int/en/about/Pages/terms-of-use.aspx",
+  "accessedAt": "2026-07-14T16:45:00.000Z",
+  "status": "reviewed",
+  "rawFiles": [
+    {
+      "name": "T02020000C90004PDFE.pdf",
+      "notes": "Public ITU-hosted numbering-plan PDF. The repository stores extracted factual metadata, not a mirrored copy of the source PDF."
+    }
+  ],
+  "importedFields": [
+    "country code",
+    "fixed area codes",
+    "mobile prefixes",
+    "operator names",
+    "reserved ranges",
+    "private numbering ranges",
+    "source dates"
+  ],
+  "targetFiles": [
+    "data/country-numbering-plans.json",
+    "data/operators.json",
+    "data/fixed-area-codes.json",
+    "data/mobile-prefixes.json",
+    "data/number-ranges.json",
+    "data/sources.json"
+  ],
+  "transforms": [
+    "Normalize displayed prefixes such as (0)11 into national dialingPrefix values such as 011.",
+    "Store fixed area codes without the trunk prefix in areaCode and with the trunk prefix in dialingPrefix.",
+    "Map operator names to stable OpenSyria IDs.",
+    "Represent reserved, used, unused, short-number, and private-numbering facts as number-range records.",
+    "Link fixed area-code geography to OpenSyria governorate IDs where available."
+  ],
+  "reviewNotes": "Imported factual numbering metadata only. ITU terms remain visible in sources.json; do not mirror source files or imply broader redistribution rights beyond the extracted factual dataset."
+}

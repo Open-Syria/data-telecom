@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opensyria.org/schemas/data-telecom/release-manifest.schema.json",
+  "title": "OpenSyria Telecom Release Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "dataset", "release", "artifacts", "sources"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "slug", "repository", "category", "title"],
+      "properties": {
+        "id": { "type": "string", "const": "opensyria-telecom" },
+        "slug": { "type": "string", "const": "telecom" },
+        "repository": { "type": "string", "const": "data-telecom" },
+        "category": { "type": "string", "const": "telecom" },
+        "title": { "$ref": "#/$defs/localizedText" }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "status", "publishedAt"],
+      "properties": {
+        "version": { "type": "string", "minLength": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["planned", "seed", "released", "deprecated"]
+        },
+        "publishedAt": { "type": ["string", "null"], "format": "date-time" },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "format", "path", "sha256", "sizeBytes"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "format": {
+            "type": "string",
+            "enum": ["json", "ndjson", "csv", "sql", "yaml", "xml"]
+          },
+          "path": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "sizeBytes": { "type": "integer", "minimum": 0 },
+          "recordCount": { "type": "integer", "minimum": 0 },
+          "mediaType": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "license"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "license": { "type": "string", "minLength": 1 },
+          "accessedAt": { "type": "string", "format": "date-time" },
+          "fields": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "publicApi", "checks", "domains", "blockers"],
+      "properties": {
+        "level": { "$ref": "#/$defs/readinessLevel" },
+        "publicApi": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "minimumLevel", "reason"],
+          "properties": {
+            "status": { "type": "string", "enum": ["not_approved", "approved"] },
+            "minimumLevel": { "$ref": "#/$defs/readinessLevel" },
+            "reason": { "type": "string", "minLength": 1 }
+          }
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "status"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "status": { "type": "string", "enum": ["passed", "warning", "blocked"] },
+              "expected": { "type": ["string", "number", "boolean"] },
+              "actual": { "type": ["string", "number", "boolean"] },
+              "notes": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "status", "recordCount", "notes"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "enum": [
+                  "country_numbering_plans",
+                  "operators",
+                  "fixed_area_codes",
+                  "mobile_prefixes",
+                  "number_ranges"
+                ]
+              },
+              "status": { "type": "string", "enum": ["ready", "partial", "empty", "blocked"] },
+              "recordCount": { "type": "integer", "minimum": 0 },
+              "notes": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "blockers": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "readinessLevel": {
+      "type": "string",
+      "enum": ["raw_seed", "public_directory_ready", "api_ready"]
+    },
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "ar": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "sy-mobile-prefix-090-reserved",
+    "name": {
+      "en": "Reserved mobile prefix 090"
+    },
+    "rangeType": "reserved_mobile_prefix",
+    "ranges": ["090"],
+    "assignmentStatus": "reserved",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-090-reserved",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  }
+]

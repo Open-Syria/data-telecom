@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sy-mobile-prefix-093-syriatel",
+    "prefix": "93",
+    "dialingPrefix": "093",
+    "operatorId": "sy-syriatel",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-093-syriatel",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  }
+]

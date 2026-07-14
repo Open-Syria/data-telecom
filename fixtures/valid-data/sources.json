@@ -1,0 +1,29 @@
+[
+  {
+    "id": "itu-syria-numbering-plan-2022",
+    "title": "Syrian Arab Republic (country code +963), National Numbering Plan",
+    "url": "https://www.itu.int/dms_pub/itu-t/oth/02/02/T02020000C90004PDFE.pdf",
+    "license": "ITU website terms; public informational material with reuse limitations",
+    "licenseUrl": "https://www.itu.int/en/about/Pages/terms-of-use.aspx",
+    "status": "approved",
+    "fields": [
+      "country code",
+      "fixed area codes",
+      "mobile prefixes",
+      "operator names",
+      "reserved ranges",
+      "private numbering ranges",
+      "source dates"
+    ],
+    "notes": "Public ITU-hosted PDF used for factual numbering metadata."
+  },
+  {
+    "id": "opensyria-data-geography",
+    "title": "OpenSyria Data Geography",
+    "url": "https://github.com/Open-Syria/data-geography",
+    "license": "OpenSyria dataset compilation; upstream source licenses apply",
+    "status": "approved",
+    "fields": ["governorate identifiers"],
+    "notes": "Used to link fixed area-code records to reviewed OpenSyria governorate IDs."
+  }
+]

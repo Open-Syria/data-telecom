@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opensyria.org/schemas/data-telecom/number-ranges.schema.json",
+  "title": "OpenSyria Telecom Number Ranges",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "rangeType",
+      "ranges",
+      "assignmentStatus",
+      "sourceIds",
+      "sourceReferences",
+      "sourceStatus"
+    ],
+    "properties": {
+      "id": { "$ref": "#/$defs/opensyriaId" },
+      "name": { "$ref": "#/$defs/localizedText" },
+      "rangeType": {
+        "type": "string",
+        "enum": [
+          "reserved_mobile_prefix",
+          "used_range",
+          "unused_range",
+          "short_number",
+          "private_numbering"
+        ]
+      },
+      "ranges": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string", "pattern": "^[0-9x]+$" }
+      },
+      "assignmentStatus": {
+        "type": "string",
+        "enum": ["assigned", "reserved", "unused", "used", "private_numbering"]
+      },
+      "sourceIds": { "$ref": "#/$defs/sourceIds" },
+      "sourceReferences": { "$ref": "#/$defs/sourceReferences" },
+      "sourceStatus": { "$ref": "#/$defs/sourceStatus" },
+      "notes": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "opensyriaId": {
+      "type": "string",
+      "pattern": "^sy-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "ar": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "sourceReferences": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sourceReference" }
+    },
+    "sourceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "accessedAt"],
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1 },
+        "sourceRecordId": { "type": "string", "minLength": 1 },
+        "sourceRecordDate": {
+          "type": "string",
+          "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"
+        },
+        "accessedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "sourceStatus": {
+      "type": "string",
+      "enum": ["pending_release", "seed", "released", "deprecated"]
+    }
+  }
+}

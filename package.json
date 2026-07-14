@@ -1,0 +1,44 @@
+{
+  "name": "@opensyria/data-telecom",
+  "version": "0.1.0",
+  "description": "Canonical OpenSyria telecom numbering reference datasets.",
+  "author": "OpenSyria",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE.md",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=11.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
+    "validate:schemas": "node scripts/validate-schemas.mjs",
+    "validate:imports": "node scripts/validate-imports.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "validate:fixtures": "node scripts/validate-data.mjs --data-dir=fixtures/valid-data",
+    "release:build": "node scripts/build-release.mjs",
+    "release:build:fixtures": "node scripts/build-release.mjs --data-dir=fixtures/valid-data --release-dir=dist/fixture-release",
+    "release:publish:github": "node scripts/publish-github-release.mjs",
+    "release:prepare": "node scripts/prepare-release.mjs",
+    "report:data": "node scripts/report-data.mjs",
+    "report:fixtures": "node scripts/report-data.mjs --data-dir=fixtures/valid-data",
+    "coverage:data": "node scripts/analyze-coverage.mjs",
+    "coverage:fixtures": "node scripts/analyze-coverage.mjs --data-dir=fixtures/valid-data --out-dir=dist/fixture-coverage",
+    "validate": "pnpm run check && pnpm run validate:schemas && pnpm run validate:imports && pnpm run validate:data && pnpm run validate:fixtures && pnpm run release:build && pnpm run release:build:fixtures && pnpm run coverage:data && pnpm run coverage:fixtures",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.2",
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8"
+  }
+}

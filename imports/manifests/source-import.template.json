@@ -1,0 +1,26 @@
+{
+  "sourceId": "example-telecom-source",
+  "sourceTitle": "Example telecom source",
+  "sourceUrl": "https://example.com/telecom-source",
+  "license": "Review before use",
+  "accessedAt": "2026-07-14T00:00:00.000Z",
+  "status": "planned",
+  "rawFiles": [
+    {
+      "name": "example.pdf",
+      "notes": "Template only."
+    }
+  ],
+  "importedFields": ["country code", "prefixes"],
+  "targetFiles": [
+    "data/country-numbering-plans.json",
+    "data/operators.json",
+    "data/mobile-prefixes.json",
+    "data/sources.json"
+  ],
+  "transforms": [
+    "Extract factual numbering metadata into canonical JSON records.",
+    "Keep uncertain numbering facts out of the dataset until a reviewer confirms them."
+  ],
+  "reviewNotes": "Template only. Replace with source-specific review notes before importing."
+}

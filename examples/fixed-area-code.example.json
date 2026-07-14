@@ -1,0 +1,33 @@
+{
+  "id": "sy-fixed-area-code-11-damascus-rif-dimashq",
+  "name": {
+    "en": "Damascus and Rif Dimashq"
+  },
+  "areaCode": "11",
+  "dialingPrefix": "011",
+  "operatorId": "sy-syrian-telecom",
+  "governorateIds": ["sy-damascus", "sy-rif-dimashq"],
+  "subscriberNumberLength": {
+    "min": 7,
+    "max": 7
+  },
+  "nationalSignificantNumberLength": {
+    "min": 9,
+    "max": 9
+  },
+  "sourceIds": ["itu-syria-numbering-plan-2022", "opensyria-data-geography"],
+  "sourceReferences": [
+    {
+      "sourceId": "itu-syria-numbering-plan-2022",
+      "sourceRecordId": "fixed-damascus-rural-011",
+      "sourceRecordDate": "2022-08-11",
+      "accessedAt": "2026-07-14T16:45:00.000Z"
+    },
+    {
+      "sourceId": "opensyria-data-geography",
+      "sourceRecordId": "sy-damascus sy-rif-dimashq",
+      "accessedAt": "2026-07-14T16:45:00.000Z"
+    }
+  ],
+  "sourceStatus": "released"
+}

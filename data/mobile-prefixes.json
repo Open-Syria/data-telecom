@@ -1,0 +1,146 @@
+[
+  {
+    "id": "sy-mobile-prefix-091-wafa-telecom",
+    "prefix": "91",
+    "dialingPrefix": "091",
+    "operatorId": "sy-wafa-telecom",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-091-wafa-telecom",
+        "sourceRecordDate": "2022-02-27",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-092-wafa-telecom",
+    "prefix": "92",
+    "dialingPrefix": "092",
+    "operatorId": "sy-wafa-telecom",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-092-wafa-telecom",
+        "sourceRecordDate": "2022-02-27",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-093-syriatel",
+    "prefix": "93",
+    "dialingPrefix": "093",
+    "operatorId": "sy-syriatel",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-093-syriatel",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-094-mtn-syria",
+    "prefix": "94",
+    "dialingPrefix": "094",
+    "operatorId": "sy-mtn-syria",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-094-mtn-syria",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-095-mtn-syria",
+    "prefix": "95",
+    "dialingPrefix": "095",
+    "operatorId": "sy-mtn-syria",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-095-mtn-syria",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-096-mtn-syria",
+    "prefix": "96",
+    "dialingPrefix": "096",
+    "operatorId": "sy-mtn-syria",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-096-mtn-syria",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-098-syriatel",
+    "prefix": "98",
+    "dialingPrefix": "098",
+    "operatorId": "sy-syriatel",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-098-syriatel",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  },
+  {
+    "id": "sy-mobile-prefix-099-syriatel",
+    "prefix": "99",
+    "dialingPrefix": "099",
+    "operatorId": "sy-syriatel",
+    "subscriberNumberLength": 7,
+    "assignmentStatus": "assigned",
+    "sourceIds": ["itu-syria-numbering-plan-2022"],
+    "sourceReferences": [
+      {
+        "sourceId": "itu-syria-numbering-plan-2022",
+        "sourceRecordId": "mobile-099-syriatel",
+        "sourceRecordDate": "2022-08-11",
+        "accessedAt": "2026-07-14T16:45:00.000Z"
+      }
+    ],
+    "sourceStatus": "released"
+  }
+]

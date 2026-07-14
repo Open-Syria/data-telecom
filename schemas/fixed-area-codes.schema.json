@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opensyria.org/schemas/data-telecom/fixed-area-codes.schema.json",
+  "title": "OpenSyria Telecom Fixed Area Codes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "areaCode",
+      "dialingPrefix",
+      "operatorId",
+      "governorateIds",
+      "subscriberNumberLength",
+      "nationalSignificantNumberLength",
+      "sourceIds",
+      "sourceReferences",
+      "sourceStatus"
+    ],
+    "properties": {
+      "id": { "$ref": "#/$defs/opensyriaId" },
+      "name": { "$ref": "#/$defs/localizedText" },
+      "areaCode": { "type": "string", "pattern": "^[1-9][0-9]$" },
+      "dialingPrefix": { "type": "string", "pattern": "^0[1-9][0-9]$" },
+      "operatorId": { "$ref": "#/$defs/opensyriaId" },
+      "governorateIds": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/opensyriaId" }
+      },
+      "subscriberNumberLength": { "$ref": "#/$defs/lengthRange" },
+      "nationalSignificantNumberLength": { "$ref": "#/$defs/lengthRange" },
+      "sourceIds": { "$ref": "#/$defs/sourceIds" },
+      "sourceReferences": { "$ref": "#/$defs/sourceReferences" },
+      "sourceStatus": { "$ref": "#/$defs/sourceStatus" },
+      "notes": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "opensyriaId": {
+      "type": "string",
+      "pattern": "^sy-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "ar": { "type": "string", "minLength": 1 }
+      }
+    },
+    "lengthRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "integer", "minimum": 1 },
+        "max": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "sourceReferences": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sourceReference" }
+    },
+    "sourceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "accessedAt"],
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1 },
+        "sourceRecordId": { "type": "string", "minLength": 1 },
+        "sourceRecordDate": {
+          "type": "string",
+          "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"
+        },
+        "accessedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "sourceStatus": {
+      "type": "string",
+      "enum": ["pending_release", "seed", "released", "deprecated"]
+    }
+  }
+}
