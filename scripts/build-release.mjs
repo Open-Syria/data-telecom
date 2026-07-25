@@ -20,6 +20,7 @@ const releaseDirectory = path.resolve(root, getCliOption('--release-dir') ?? 'di
 const packageJson = await readJson(path.join(root, 'package.json'));
 const releaseVersion = process.env.RELEASE_VERSION ?? `v${packageJson.version}`;
 const releaseStatus = datasetReleaseStatusSchema.parse(process.env.RELEASE_STATUS ?? 'released');
+const releaseGeneratedAt = process.env.RELEASE_GENERATED_AT ?? new Date().toISOString();
 const releasePublishedAt = process.env.RELEASE_PUBLISHED_AT ?? null;
 const assetBaseUrl = process.env.RELEASE_ASSET_BASE_URL;
 
@@ -739,7 +740,7 @@ const manifest = {
       ar: '\u0628\u064a\u0627\u0646\u0627\u062a \u062a\u0631\u0642\u064a\u0645 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a',
     },
   },
-  generatedAt: new Date().toISOString(),
+  generatedAt: releaseGeneratedAt,
   readiness: buildReleaseReadiness(),
   release: {
     notes: 'Generated telecom numbering release artifacts.',

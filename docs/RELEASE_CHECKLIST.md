@@ -18,3 +18,5 @@ Before publishing a release:
    `datasets-api`.
 7. Publish through the repository release workflow or `release:publish:github`
    with a valid `GITHUB_TOKEN`.
+8. Confirm a workflow rerun retains byte-identical assets. Never replace changed
+   assets under an existing version tag; publish a corrected version instead.

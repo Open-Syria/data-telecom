@@ -115,4 +115,6 @@ For contribution details, start with [CONTRIBUTING.md](CONTRIBUTING.md) and
 `pnpm run release:build` emits JSON, NDJSON, CSV, SQL, YAML, and XML artifacts
 for the public data files plus a release manifest.
 
+Published version assets are immutable; corrections require a new version tag.
+
 The canonical source of truth remains the JSON files in `data/`.

@@ -36,8 +36,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Resolve reproducible release timestamp
+        id: release
+        run: |
+          timestamp="$(TZ=UTC git show -s --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd "$GITHUB_SHA")"
+          echo "timestamp=$timestamp" >> "$GITHUB_OUTPUT"
+
       - name: Prepare release artifacts
-        run: pnpm run release:prepare -- --version "${GITHUB_REF_NAME}" --status "${DATASET_RELEASE_STATUS:-released}"
+        run: pnpm run release:prepare -- --version "${GITHUB_REF_NAME}" --generated-at "${{ steps.release.outputs.timestamp }}" --published-at "${{ steps.release.outputs.timestamp }}" --status "${DATASET_RELEASE_STATUS:-released}"
         env:
           DATASET_RELEASE_STATUS: ${{ vars.DATASET_RELEASE_STATUS }}
 
