@@ -2,6 +2,8 @@
 
 Canonical OpenSyria telecom numbering reference datasets.
 
+**Canonical public dataset page:** [Syrian Telecom Numbering Data and Downloads](https://opensyria.org/datasets/telecom)
+
 This repository publishes source-backed public metadata for Syrian telephone
 numbering. It is intended for validation, formatting, area-code lookup,
 operator-prefix lookup, and civic reference use.
